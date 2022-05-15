@@ -11,7 +11,7 @@ import kotlinx.coroutines.launch
 
 class MainViewModel(private val useCase: GetUsersUseCase): ViewModel() {
 
-    private val _users = MutableLiveData<List<User>>()
+    private val _users = MutableLiveData<List<User>>(listOf())
     val users: LiveData<List<User>> get() = _users
 
     private val _state = MutableLiveData<State>(State.LOADING)
@@ -24,7 +24,8 @@ class MainViewModel(private val useCase: GetUsersUseCase): ViewModel() {
                     _users.postValue(result.value)
                     _state.postValue(State.SUCCESS)
                 }
-                is Result.Failure -> { _state.postValue(State.FAILURE) }
+                is Result.Failure -> { _state.postValue(State.FAILURE)
+                }
             }
         }
     }

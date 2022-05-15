@@ -1,10 +1,8 @@
 package com.picpay.desafio.android.retrofit.config
 
-import android.app.Application
 import android.content.Context
 import com.google.gson.GsonBuilder
 import com.picpay.desafio.android.BuildConfig
-import com.picpay.desafio.android.MyApplication
 import com.picpay.desafio.android.retrofit.config.interceptors.NetworkInterceptor
 import okhttp3.Cache
 import okhttp3.OkHttpClient
