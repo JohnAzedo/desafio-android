@@ -10,7 +10,7 @@ import com.picpay.desafio.android.retrofit.mappers.UserMapper
 import com.picpay.desafio.android.retrofit.services.PicPayService
 import com.picpay.desafio.android.tools.Result
 
-class UserRepositoryImpl(private val service: PicPayService): RemoteUserRepository {
+class RemoteUserRepositoryImpl(private val service: PicPayService): RemoteUserRepository {
     override suspend fun getUsers(): Result<List<User>> {
         return try {
             when (val result = service.getUsers().parseResponse()){
