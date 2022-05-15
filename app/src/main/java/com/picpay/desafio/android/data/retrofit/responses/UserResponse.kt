@@ -1,4 +1,4 @@
-package com.picpay.desafio.android.retrofit.responses
+package com.picpay.desafio.android.data.retrofit.responses
 
 import com.google.gson.annotations.SerializedName
 

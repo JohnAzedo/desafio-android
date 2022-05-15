@@ -1,13 +1,13 @@
-package com.picpay.desafio.android.retrofit.repositories
+package com.picpay.desafio.android.data.retrofit.repositories
 
 
 import com.picpay.desafio.android.domain.entities.User
 import com.picpay.desafio.android.domain.repositories.RemoteUserRepository
-import com.picpay.desafio.android.retrofit.config.ServiceResult
-import com.picpay.desafio.android.retrofit.config.parseResponse
-import com.picpay.desafio.android.retrofit.config.HttpErrors
-import com.picpay.desafio.android.retrofit.mappers.UserMapper
-import com.picpay.desafio.android.retrofit.services.PicPayService
+import com.picpay.desafio.android.data.retrofit.config.ServiceResult
+import com.picpay.desafio.android.data.retrofit.config.parseResponse
+import com.picpay.desafio.android.data.retrofit.config.HttpErrors
+import com.picpay.desafio.android.data.retrofit.mappers.UserMapper
+import com.picpay.desafio.android.data.retrofit.services.PicPayService
 import com.picpay.desafio.android.tools.Result
 
 class RemoteUserRepositoryImpl(private val service: PicPayService): RemoteUserRepository {

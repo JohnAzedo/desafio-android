@@ -1,4 +1,4 @@
-package com.picpay.desafio.android.retrofit.config.interceptors
+package com.picpay.desafio.android.data.retrofit.config.interceptors
 
 import android.util.Log
 import okhttp3.CacheControl

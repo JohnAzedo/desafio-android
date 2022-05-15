@@ -1,11 +1,11 @@
-package com.picpay.desafio.android.room
+package com.picpay.desafio.android.data.room.config
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.picpay.desafio.android.room.daos.UserDAO
-import com.picpay.desafio.android.room.models.UserModel
+import com.picpay.desafio.android.data.room.daos.UserDAO
+import com.picpay.desafio.android.data.room.models.UserModel
 
 @Database(entities = [UserModel::class], version = 1)
 abstract class AppDatabase: RoomDatabase() {

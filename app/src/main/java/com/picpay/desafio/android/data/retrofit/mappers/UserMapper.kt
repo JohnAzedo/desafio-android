@@ -1,7 +1,7 @@
-package com.picpay.desafio.android.retrofit.mappers
+package com.picpay.desafio.android.data.retrofit.mappers
 
 import com.picpay.desafio.android.domain.entities.User
-import com.picpay.desafio.android.retrofit.responses.UserResponse
+import com.picpay.desafio.android.data.retrofit.responses.UserResponse
 
 object UserMapper {
     fun make(responses: List<UserResponse>): List<User> {

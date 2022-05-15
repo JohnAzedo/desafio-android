@@ -1,9 +1,9 @@
-package com.picpay.desafio.android.retrofit.config
+package com.picpay.desafio.android.data.retrofit.config
 
 import android.content.Context
 import com.google.gson.GsonBuilder
 import com.picpay.desafio.android.BuildConfig
-import com.picpay.desafio.android.retrofit.config.interceptors.NetworkInterceptor
+import com.picpay.desafio.android.data.retrofit.config.interceptors.NetworkInterceptor
 import okhttp3.Cache
 import okhttp3.OkHttpClient
 import retrofit2.converter.gson.GsonConverterFactory

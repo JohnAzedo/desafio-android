@@ -1,6 +1,6 @@
 package com.picpay.desafio.android
 
-import com.picpay.desafio.android.retrofit.services.PicPayService
+import com.picpay.desafio.android.data.retrofit.services.PicPayService
 
 class ExampleService(
     private val service: PicPayService

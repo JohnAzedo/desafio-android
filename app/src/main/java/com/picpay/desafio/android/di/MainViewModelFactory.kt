@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.picpay.desafio.android.domain.usecases.GetUsersUseCaseImpl
-import com.picpay.desafio.android.retrofit.config.RetrofitClient
-import com.picpay.desafio.android.retrofit.repositories.RemoteUserRepositoryImpl
-import com.picpay.desafio.android.retrofit.services.PicPayService
-import com.picpay.desafio.android.room.AppDatabase
-import com.picpay.desafio.android.room.repositories.LocalUserRepositoryImpl
+import com.picpay.desafio.android.data.retrofit.config.RetrofitClient
+import com.picpay.desafio.android.data.retrofit.repositories.RemoteUserRepositoryImpl
+import com.picpay.desafio.android.data.retrofit.services.PicPayService
+import com.picpay.desafio.android.data.room.config.AppDatabase
+import com.picpay.desafio.android.data.room.repositories.LocalUserRepositoryImpl
 import com.picpay.desafio.android.ui.MainViewModel
 
 object MainViewModelFactory {

@@ -1,7 +1,7 @@
-package com.picpay.desafio.android.room.mappers
+package com.picpay.desafio.android.data.room.mappers
 
 import com.picpay.desafio.android.domain.entities.User
-import com.picpay.desafio.android.room.models.UserModel
+import com.picpay.desafio.android.data.room.models.UserModel
 
 object UserMapper {
 

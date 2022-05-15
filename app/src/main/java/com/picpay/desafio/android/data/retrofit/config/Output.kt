@@ -1,4 +1,4 @@
-package com.picpay.desafio.android.retrofit.config
+package com.picpay.desafio.android.data.retrofit.config
 
 import android.util.Log
 import retrofit2.Response

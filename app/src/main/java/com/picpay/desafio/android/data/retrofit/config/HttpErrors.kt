@@ -1,4 +1,4 @@
-package com.picpay.desafio.android.retrofit.config
+package com.picpay.desafio.android.data.retrofit.config
 
 object HttpErrors {
     class StatusCodeInvalid(statusCode: Int): Throwable("Http request status code is $statusCode")
