@@ -5,14 +5,16 @@ import com.picpay.desafio.android.data.retrofit.responses.UserResponse
 
 object UserMapper {
     fun make(responses: List<UserResponse>): List<User> {
-        val users: List<User> = responses.map {
-            User(
-                id = it.id,
-                name = it.name,
-                img = it.img,
-                username = it.username
-            )
-        }
+        val users: List<User> = responses
+            .filter { it.isNotNull() }
+            .map {
+                User(
+                    id = it.id!!,
+                    name = it.name!!,
+                    img = it.img!!,
+                    username = it.username!!
+                )
+            }
 
         return users
     }
