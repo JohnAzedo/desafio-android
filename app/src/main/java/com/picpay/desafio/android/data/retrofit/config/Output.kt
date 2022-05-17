@@ -17,13 +17,13 @@ interface ServiceResult <out Response> {
 fun <R: Any> Response<R>.parseResponse() = run {
     val body = body()
 
-    if(raw().networkResponse != null ){
-        Log.d("CACHE_FEATURE", "Response from NETWORK")
-    }
-
-    if(raw().cacheResponse != null && raw().networkResponse == null) {
-        Log.d("CACHE_FEATURE", "Response from CACHE")
-    }
+//    if(raw().networkResponse != null ){
+//        Log.d("CACHE_FEATURE", "Response from NETWORK")
+//    }
+//
+//    if(raw().cacheResponse != null && raw().networkResponse == null) {
+//        Log.d("CACHE_FEATURE", "Response from CACHE")
+//    }
 
     when {
         isSuccessful && body != null ->
